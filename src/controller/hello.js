@@ -15,7 +15,7 @@ exports.hello = async function (ctx, next) {
         logger.error(e);
         return await next();
     }
-    logger.debug("body after:" + JSON.stringify(body))
+    logger.debug("%s, body after: %s" , ctx.traceid, JSON.stringify(body))
     if(body.name == 'koa') ctx.body = 'KOA';
     else ctx.body = 'we are at home!';
 }
