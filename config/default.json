@@ -1,0 +1,13 @@
+{
+    "log":{
+        "appenders": {
+          "console":{"type": "console"}
+        },
+        "categories": { "default": { "appenders": ["console"], "level": "debug" } }
+    },
+    "path":{
+        "controller":"./src/controller",
+        "router":"./src/router"
+    },
+    "end":""
+}
